@@ -19,14 +19,19 @@ public class RecipeActivity extends AppCompatActivity implements View.OnClickLis
         EditText ingredients = (EditText) this.findViewById(R.id.ingredients);
         EditText instructions = (EditText) this.findViewById(R.id.instructions);
 
+        // Pega os valores dentro dos EditTexts e coloca dentro da instancia de Recipe
         r.setTitle(title.getText().toString());
         r.getIngredients().add(ingredients.getText().toString());
         r.getInstructions().add(instructions.getText().toString());
 
+        // Cria o novo intent com a Recipe recém criada
         Intent i = new Intent(this, MainActivity.class);
         i.putExtra("recipe", r);
 
+        // Marca o resultado dessa activity como OK e guarda o intent de resultado
         setResult(RESULT_OK, i);
+
+        // Finaliza a Activity
         finish();
     }
 
@@ -40,7 +45,9 @@ public class RecipeActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
+        // Verifica qual view chamou o onClick
         switch(view.getId()){
+            // Executa a ação relacionada ao button
             case R.id.button:
                 save();
                 break;
