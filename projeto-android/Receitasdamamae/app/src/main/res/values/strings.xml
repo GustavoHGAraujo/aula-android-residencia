@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Receitas da mamae</string>
+    <string name="add_recipe">Adicionar</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="instructions">Modo de preparo</string>
+    <string name="title">Título</string>
+</resources>
