@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string-array name="vetor">
+        <item>América</item>
+        <item>Atlético</item>
+        <item>Cruzeiro</item>
+    </string-array>
+</resources>
